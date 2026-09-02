@@ -1,0 +1,3 @@
+*:not(nav *) {
+    color: red;
+}
