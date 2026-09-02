@@ -1,7 +1,20 @@
-*:not(nav *) {
-    color: red;
+body {
+    margin: 0;
+    font-family: sans-serif;
 }
 
 nav {
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: red;
+    padding: 16px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 12px;
+}
+nav a {
+    background-color: green;
+    padding: 8px;
 }
