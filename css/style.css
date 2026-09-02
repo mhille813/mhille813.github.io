@@ -1,20 +1,33 @@
 body {
     margin: 0;
+    padding: 0;
     font-family: sans-serif;
 }
 
 nav {
-    background-color: red;
-    padding: 16px;
+    background-color: #333;
+    color: #fff;
+    padding: 12px;
 }
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
-    gap: 12px;
+    justify-content: center;
+    gap: 8px;
 }
 nav a {
-    background-color: green;
-    padding: 8px;
+    text-decoration: none;
+    display: block;
+    padding: 14px 16px;
+}
+nav a.current-page {
+    background-color: #222;
+}
+nav a:hover {
+    background-color: #111;
+}
+nav a:visited {
+    color: #fff;
 }
