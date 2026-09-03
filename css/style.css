@@ -3,7 +3,7 @@ body {
     padding: 0;
     font-family: sans-serif;
     display: grid;
-    grid-template-areas: "header header header" "aside1 main aside2" "footer footer footer";
+    grid-template-areas: "header header header" "aside1 main aside2";
 }
 
 header {
@@ -13,15 +13,14 @@ header {
     grid-area: header;
     position: sticky;
     top: 0;
-    width: 100%;
 }
 
 footer {
     background-color: orange;
-    grid-area: footer;
     position: fixed;
     bottom: 0;
     width: 100%;
+    padding: 12px;
 }
 
 aside {
