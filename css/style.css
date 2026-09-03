@@ -120,7 +120,6 @@ footer {
 
 footer>* {
     width: 100%;
-    background-color: red;
 }
 
 footer>img {
@@ -129,11 +128,11 @@ footer>img {
 
 footer nav ul {
     flex-direction: column;
-    gap: 2px;
+    gap: 3px;
 }
 
 footer nav>span {
     font-weight: bold;
     display: block;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
 }
