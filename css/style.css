@@ -113,9 +113,10 @@ footer {
     padding: 24px;
     grid-area: footer;
     display: grid;
-    grid-template-areas: "left center right";
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "left right";
+    grid-template-columns: 1fr 1fr;
     justify-items: center;
+    align-items: center;
 }
 
 footer>* {
@@ -124,15 +125,24 @@ footer>* {
 
 footer>img {
     width: 60%;
+    max-width: 375px;
 }
 
 footer nav ul {
     flex-direction: column;
-    gap: 3px;
+    gap: 6px;
 }
 
 footer nav>span {
     font-weight: bold;
     display: block;
-    margin-bottom: 6px;
+    margin-bottom: 12px;
+}
+footer nav > span:not(:first-child) {
+    margin-top: 24px;
+}
+
+/* https://stackoverflow.com/a/18935218 */
+footer {
+    box-shadow: 0 50vh 0 50vh #4a4a50;
 }
