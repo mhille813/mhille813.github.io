@@ -4,7 +4,7 @@ body {
     font-family: sans-serif;
 }
 
-nav {
+header {
     background-color: #333;
     color: #fff;
     padding: 12px;
@@ -22,17 +22,20 @@ nav ul {
 nav a {
     text-decoration: none;
     display: block;
+}
+
+header nav a {
     padding: 14px 16px;
 }
 
-nav a.current-page {
+header nav a.current-page {
     background-color: #222;
 }
 
-nav a:hover {
+header nav a:hover {
     background-color: #111;
 }
 
-nav a:visited {
+header nav a:visited {
     color: #fff;
 }
