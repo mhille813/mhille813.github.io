@@ -14,26 +14,6 @@ body {
     justify-items: center;
 }
 
-header {
-    background-color: #9a0029;
-    color: #fff;
-    padding: 0 12px;
-    grid-area: header;
-    position: sticky;
-    width: 100vw;
-    top: 0;
-}
-
-footer {
-    background-color: #4a4a50;
-    color: #fff;
-    /* position: fixed; */
-    /* bottom: 0; */
-    width: 100vw;
-    padding: 12px;
-    grid-area: footer;
-}
-
 main {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -44,6 +24,39 @@ main {
     padding: 40px 80px 60px;
 }
 
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 4px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+figure {
+    width: 49%;
+    margin: 0;
+}
+
+figure img {
+    border-radius: 4px;
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+}
+
+figcaption {
+    font-style: italic;
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -52,12 +65,19 @@ nav ul {
     justify-content: center;
 }
 
-aside nav ul {
-    flex-direction: column;
+/* HEADER & FOOTER */
+
+header {
+    background-color: #9a0029;
+    color: #fff;
+    padding: 0 12px;
+    grid-area: header;
+    position: sticky;
+    width: 100vw;
+    top: 0;
 }
 
-nav a {
-    color: #fff;
+header nav a {
     text-decoration: none;
     display: block;
 }
@@ -74,40 +94,41 @@ header nav a:hover {
     background-color: #600019;
 }
 
-header nav a:visited {
+header nav a,
+header nav a:visited,
+footer nav a,
+footer nav a:visited {
     color: #fff;
 }
 
+footer {
+    background-color: #4a4a50;
+    color: #fff;
+    width: 100vw;
+    padding: 24px;
+    grid-area: footer;
 
-table,
-th,
-td {
-    border: 1px solid black;
-    border-collapse: collapse;
+    display: grid;
+    grid-template-areas: "left center right";
+    justify-items: center;
+    align-items: center;
+    gap: 8px;
 }
 
-td {
-    padding: 4px;
-}
-
-.flex {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2%;
-}
-
-figure {
-    width: 49%;
-    margin: 0;
-}
-
-img {
-    border-radius: 4px;
+footer>* {
     width: 100%;
-    aspect-ratio: 3/2;
-    object-fit: cover;
 }
 
-figcaption {
-    font-style: italic;
+footer>img {
+    align-self: start;
+    width: 33%;
+}
+
+footer nav {
+    align-self: start;
+}
+
+footer nav ul {
+    flex-direction: column;
+    gap: 2px;
 }
