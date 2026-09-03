@@ -11,14 +11,17 @@ header {
     color: #fff;
     padding: 0 12px;
     grid-area: header;
-    /* position: fixed; */
-    /* top: 0; */
+    position: sticky;
+    top: 0;
     width: 100%;
 }
 
 footer {
     background-color: orange;
     grid-area: footer;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 aside {
