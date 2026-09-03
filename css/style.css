@@ -74,6 +74,10 @@ table, th, td {
   border-collapse: collapse;
 }
 
+td {
+    padding: 4px;
+}
+
 td.passed {
     background-color: green;
 }
