@@ -138,7 +138,8 @@ footer nav>span {
     display: block;
     margin-bottom: 12px;
 }
-footer nav > span:not(:first-child) {
+
+footer nav>span:not(:first-child) {
     margin-top: 24px;
 }
 
