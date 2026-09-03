@@ -1,0 +1,6 @@
+td.passed {
+    background-color: green;
+}
+td.failed {
+    background-color: red;
+}
