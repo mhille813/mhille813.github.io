@@ -30,6 +30,7 @@ td {
     border: 1px solid black;
     border-collapse: collapse;
 }
+
 table {
     width: 100%;
 }
@@ -111,28 +112,28 @@ footer {
     width: 100vw;
     padding: 24px;
     grid-area: footer;
-
     display: grid;
     grid-template-areas: "left center right";
+    grid-template-columns: repeat(3, 1fr);
     justify-items: center;
-    align-items: center;
-    gap: 8px;
 }
 
 footer>* {
     width: 100%;
+    background-color: red;
 }
 
 footer>img {
-    align-self: start;
-    width: 33%;
-}
-
-footer nav {
-    align-self: start;
+    width: 60%;
 }
 
 footer nav ul {
     flex-direction: column;
     gap: 2px;
+}
+
+footer nav>span {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 4px;
 }
