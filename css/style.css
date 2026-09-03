@@ -73,3 +73,10 @@ table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
 }
+
+td.passed {
+    background-color: green;
+}
+td.failed {
+    background-color: red;
+}
