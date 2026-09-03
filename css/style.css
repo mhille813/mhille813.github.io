@@ -3,7 +3,7 @@ body {
     padding: 0;
     font-family: sans-serif;
     display: grid;
-    grid-template-areas: "aside1 main aside2" "footer footer footer";
+    grid-template-areas: "header header header" "aside1 main aside2" "footer footer footer";
 }
 
 header {
@@ -11,8 +11,8 @@ header {
     color: #fff;
     padding: 12px;
     grid-area: header;
-    position: fixed;
-    top: 0;
+    /* position: fixed; */
+    /* top: 0; */
     width: 100%;
 }
 
@@ -64,4 +64,10 @@ header nav a:hover {
 
 header nav a:visited {
     color: #fff;
+}
+
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
 }
