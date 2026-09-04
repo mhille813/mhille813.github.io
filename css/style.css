@@ -155,4 +155,15 @@ footer nav>span:not(:first-child) {
 /* https://stackoverflow.com/a/18935218 */
 footer {
     box-shadow: 0 50vh 0 50vh #4a4a50;
+    max-height: 50px;
+}
+
+
+/* DASHBOARD */
+td.passed {
+    background-color: green;
+}
+
+td.failed {
+    background-color: red;
 }
