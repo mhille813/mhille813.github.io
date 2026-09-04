@@ -27,12 +27,21 @@ main {
 table,
 th,
 td {
-    border: 1px solid black;
+    border: 2px solid black;
     border-collapse: collapse;
 }
 
 table {
     width: 100%;
+}
+
+thead {
+    background-color: #9a0029;
+    color: #fff;
+}
+thead th {
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 td {
