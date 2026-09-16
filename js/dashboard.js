@@ -34,4 +34,5 @@ window.onload = function () {
     // - study advice boundary
     // console.log(ownedStudyPoints);
     // console.log(totalStudyPoints);
+    // https://www.geeksforgeeks.org/web-templates/how-to-create-a-pie-chart-using-html-css/
 };
