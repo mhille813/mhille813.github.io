@@ -57,6 +57,10 @@ td {
     gap: 8px;
 }
 
+.justifyLeft {
+    justify-content: left;
+}
+
 figure {
     width: 49%;
     margin: 0;
@@ -165,4 +169,11 @@ td.passed {
 
 td.failed {
     background-color: red;
+}
+
+#pieChart {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    /* background-color: #a0a0a0; */
 }

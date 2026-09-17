@@ -35,12 +35,18 @@ window.onload = function () {
                 failedStudyPoints += studyPointNumber;
             }
         }
-
-        // TODO:
-        // - study points progress
-        // - study advice boundary
-        // console.log(ownedStudyPoints);
-        // console.log(totalStudyPoints);
-        // https://www.geeksforgeeks.org/web-templates/how-to-create-a-pie-chart-using-html-css/
     }
+
+    // TODO:
+    // - study points progress
+    // - study advice boundary
+    const availableStudyPoints = totalStudyPoints - ownedStudyPoints - failedStudyPoints;
+    console.log(ownedStudyPoints);
+    console.log(failedStudyPoints);
+    console.log(totalStudyPoints);
+    console.log(availableStudyPoints);
+    // https://www.geeksforgeeks.org/web-templates/how-to-create-a-pie-chart-using-html-css/
+
+    const pieChart = document.getElementById("pieChart");
+    pieChart.style = "background-color: #a0a0a0;"
 };
