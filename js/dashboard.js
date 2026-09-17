@@ -75,5 +75,4 @@ window.onload = function () {
     // console.log(failedStudyPoints);
     // console.log(totalStudyPoints);
     // console.log(availableStudyPoints);
-    // https://www.geeksforgeeks.org/web-templates/how-to-create-a-pie-chart-using-html-css/
 };
