@@ -1,3 +1,10 @@
+:root {
+    --grade-passed-color: #96dca9;
+    --grade-failed-color: #da9c8e;
+    --grade-available-color: #dcd1b2;
+}
+
+
 * {
     box-sizing: border-box;
 }
@@ -163,17 +170,33 @@ footer nav>span:not(:first-child) {
 
 
 /* DASHBOARD */
-td.passed {
-    background-color: green;
+.gradePassed {
+    background-color: var(--grade-passed-color);
 }
 
-td.failed {
-    background-color: red;
+.gradeFailed {
+    background-color: var(--grade-failed-color);
 }
 
-#pieChart {
-    width: 200px;
-    height: 200px;
+.gradeAvailable {
+    background-color: var(--grade-available-color);
+}
+
+.pieChart {
+    width: 350px;
+    height: 350px;
     border-radius: 50%;
-    /* background-color: #a0a0a0; */
+    background-color: var(--grade-available-color);
+}
+
+.legend {
+    list-style-type: none;
+    padding: 0;
+}
+
+.legend span {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    /* border: solid 1px black; */
 }
