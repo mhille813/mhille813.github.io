@@ -187,15 +187,20 @@ footer nav>span:not(:first-child) {
     height: 350px;
     border-radius: 50%;
     background-color: var(--grade-available-color);
+    border: solid 2px black;
 }
 
 .legend {
     list-style-type: none;
     padding: 0;
+    font-size: 1.2rem;
+    border: solid 2px black;
+    height: fit-content;
+    padding: 4px;
 }
 
 .legend span {
     display: inline-block;
-    width: 1rem;
-    height: 1rem;
+    width: 1.2rem;
+    height: 1.2rem;
 }
