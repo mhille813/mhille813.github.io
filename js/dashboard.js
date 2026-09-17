@@ -69,10 +69,14 @@ window.onload = function () {
         pieChart.style = pieChartStyle;
     }
 
-    // TODO:
-    // - study advice boundary
-    // console.log(ownedStudyPoints);
-    // console.log(failedStudyPoints);
-    // console.log(totalStudyPoints);
-    // console.log(availableStudyPoints);
+    const ownedStudyPointsSpan = document.getElementById("ownedStudyPoints");
+    ownedStudyPointsSpan.textContent = ownedStudyPoints;
+
+    const failedStudyPointsSpan = document.getElementById("failedStudyPoints");
+    failedStudyPointsSpan.textContent = failedStudyPoints;
+
+    const totalStudyPointsSpan = document.getElementById("totalStudyPoints");
+    totalStudyPointsSpan.textContent = totalStudyPoints;
+
+    // TODO: check if study advice boundary still achievable
 };
