@@ -92,6 +92,4 @@ window.onload = function () {
     } else {
         studyBoundaryCheckSpan.textContent = "(still possible)";
     }
-
-    // TODO: check if study advice boundary still achievable
 };
