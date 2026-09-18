@@ -28,6 +28,9 @@ window.onload = function () {
         }
 
         const studyPointsElement = tableRow.getElementsByClassName("studyPoints")[0];
+        if (!studyPointsElement) {
+            continue;
+        }
         const studyPointText = studyPointsElement.textContent;
         if (!isNaN(studyPointText)) {
             const studyPointNumber = Number(studyPointText)
