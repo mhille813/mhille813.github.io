@@ -33,7 +33,7 @@ window.onload = function () {
         }
         const studyPointText = studyPointsElement.textContent;
         if (!isNaN(studyPointText)) {
-            const studyPointNumber = Number(studyPointText)
+            const studyPointNumber = Number(studyPointText);
             totalStudyPoints += studyPointNumber;
             if (gradePassed) {
                 ownedStudyPoints += studyPointNumber;
@@ -46,10 +46,10 @@ window.onload = function () {
     const availableStudyPoints = totalStudyPoints - ownedStudyPoints - failedStudyPoints;
 
     if (totalStudyPoints == 0) {
-        pieChart.style = "display: none;"
+        pieChart.style = "display: none;";
     } else {
         const pieChart = document.getElementsByClassName("pieChart")[0];
-        let pieChartStyle = "background-image: conic-gradient("
+        let pieChartStyle = "background-image: conic-gradient(";
         let currentAngle = 0;
         if (ownedStudyPoints) {
             const angle = ownedStudyPoints / totalStudyPoints * 360 + currentAngle;
