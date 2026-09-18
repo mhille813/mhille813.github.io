@@ -2,6 +2,7 @@ window.onload = function () {
     let totalStudyPoints = 0;
     let ownedStudyPoints = 0;
     let failedStudyPoints = 0;
+    const studyBoundaryPoints = 45;
 
     const examTableBody = document.getElementById("examTableBody");
     for (const tableRow of examTableBody.children) {
@@ -77,6 +78,20 @@ window.onload = function () {
 
     const totalStudyPointsSpan = document.getElementById("totalStudyPoints");
     totalStudyPointsSpan.textContent = totalStudyPoints;
+
+    const studyAdviceBoundarySpan = document.getElementById("studyAdviceBoundary");
+    studyAdviceBoundarySpan.textContent = studyBoundaryPoints;
+
+    const studyBoundaryCheckSpan = document.getElementById("studyBoundaryCheck");
+    if (ownedStudyPoints >= studyBoundaryPoints) {
+        studyBoundaryCheckSpan.textContent = "(SUCCESS!)";
+        studyBoundaryCheckSpan.style = "color: var(--grade-passed-color);";
+    } else if (totalStudyPoints - failedStudyPoints < studyBoundaryPoints) {
+        studyBoundaryCheckSpan.textContent = "(FAILED!)";
+        studyBoundaryCheckSpan.style = "color: var(--grade-failed-color);";
+    } else {
+        studyBoundaryCheckSpan.textContent = "(still possible)";
+    }
 
     // TODO: check if study advice boundary still achievable
 };
