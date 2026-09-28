@@ -218,6 +218,7 @@ footer nav>span:not(:first-child) {
 table.swot td {
     padding: 10px 24px;
     text-align: left;
+    vertical-align: top;
 }
 
 table.swot tr:nth-child(1) td:nth-child(1) {
