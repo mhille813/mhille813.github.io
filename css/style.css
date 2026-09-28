@@ -2,6 +2,15 @@
     --grade-passed-color: #96dca6;
     --grade-failed-color: #da8e8e;
     --grade-available-color: #f4eacf;
+
+    --swot-strength-bg: #d5f5e3;
+    --swot-strength-title: #1e8449;
+    --swot-weakness-bg: #fdebd0;
+    --swot-weakness-title: #e67e22;
+    --swot-opportunity-bg: #d6eaf8;
+    --swot-opportunity-title: #2e86c1;
+    --swot-threat-bg: #f4f6f7;
+    --swot-threat-title: #1b4f72;
 }
 
 
@@ -203,4 +212,42 @@ footer nav>span:not(:first-child) {
     display: inline-block;
     width: 1.2rem;
     height: 1.2rem;
+}
+
+/* SWOT BLOG POST */
+table.swot td {
+    padding: 10px 24px;
+    text-align: left;
+}
+
+table.swot tr:nth-child(1) td:nth-child(1) {
+    background-color: var(--swot-strength-bg);
+}
+
+table.swot tr:nth-child(1) td:nth-child(1) h3 {
+    color: var(--swot-strength-title)
+}
+
+table.swot tr:nth-child(1) td:nth-child(2) {
+    background-color: var(--swot-weakness-bg);
+}
+
+table.swot tr:nth-child(1) td:nth-child(2) h3 {
+    color: var(--swot-weakness-title)
+}
+
+table.swot tr:nth-child(2) td:nth-child(1) {
+    background-color: var(--swot-opportunity-bg);
+}
+
+table.swot tr:nth-child(2) td:nth-child(1) h3 {
+    color: var(--swot-opportunity-title)
+}
+
+table.swot tr:nth-child(2) td:nth-child(2) {
+    background-color: var(--swot-threat-bg);
+}
+
+table.swot tr:nth-child(2) td:nth-child(2) h3 {
+    color: var(--swot-threat-title)
 }
