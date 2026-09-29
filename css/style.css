@@ -32,12 +32,12 @@ body {
 
 hr {
     background-color: #2a2a2e;
-    height: 12px;
+    height: 16px;
     width: 100vw;
     max-width: 990px;
     margin-left: -80px;
     border: none;
-    margin-top: 40px;
+    margin-top: 60px;
     margin-bottom: 60px;
 }
 
