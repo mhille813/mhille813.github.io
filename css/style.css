@@ -30,6 +30,17 @@ body {
     justify-items: center;
 }
 
+hr {
+    background-color: #2a2a2e;
+    height: 12px;
+    width: 100vw;
+    max-width: 990px;
+    margin-left: -80px;
+    border: none;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
 main {
     margin-top: 30px;
     margin-bottom: 30px;
