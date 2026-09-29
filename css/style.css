@@ -41,6 +41,10 @@ main {
     padding: 40px 80px 60px;
 }
 
+.italic {
+    font-style: italic;
+}
+
 table,
 th,
 td {
@@ -148,9 +152,6 @@ footer {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     align-items: center;
-
-    /* https://stackoverflow.com/a/18935218 */
-    box-shadow: 0 50vh 0 50vh #4a4a50;
 }
 
 footer>* {
