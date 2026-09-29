@@ -215,7 +215,8 @@ footer nav>span:not(:first-child) {
 }
 
 /* SWOT BLOG POST */
-table.swot td {
+table.swot td,
+table.smart td {
     padding: 10px 24px;
     text-align: left;
     vertical-align: top;
@@ -251,4 +252,14 @@ table.swot tr:nth-child(2) td:nth-child(2) {
 
 table.swot tr:nth-child(2) td:nth-child(2) h3 {
     color: var(--swot-threat-title)
+}
+
+table.smart tr:first-child td:first-child {
+    background-color: var(--swot-strength-bg);
+    color: var(--swot-strength-title);
+}
+
+table.smart tr:last-child td:first-child {
+    background-color: var(--swot-weakness-bg);
+    color: var(--swot-weakness-title);
 }
