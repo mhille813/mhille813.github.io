@@ -177,6 +177,19 @@ footer nav>span:not(:first-child) {
     margin-top: 24px;
 }
 
+/* BLOG BREADCRUMBS */
+main .breadCrumbs {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+main .breadCrumbs li:not(:first-child)::before {
+    content: ">";
+    margin-right: 8px;
+    margin-left: 12px;
+}
+
 
 /* DASHBOARD */
 .gradePassed {
