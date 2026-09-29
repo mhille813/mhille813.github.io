@@ -105,6 +105,13 @@ nav ul {
     justify-content: center;
 }
 
+.dateMarker {
+    margin-top: -2rem;
+    display: block;
+    width: 100%;
+    text-align: right;
+}
+
 /* HEADER & FOOTER */
 
 header {
